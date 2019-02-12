@@ -1,0 +1,5 @@
+Q: close_wait 如何产生？
+A: 表示client想要结束连接，发送了一个FIN报文，但server端收到了该报文并未 close(fd)，导致处于 close_wait 状态
+
+Q: 如何解决？
+A: 当然是 close(fd) 掉它咯
